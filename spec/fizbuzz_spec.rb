@@ -2,13 +2,19 @@ require_relative '../lib/fizzbuzz'
 
 describe 'fizzbuzz' do
   it 'returns "1" when passed 1' do
-    expect(fizzbuzz(1)).to eq '1'
+    expect(fizzbuzz(1)).to eq 1
   end
 end
 
 describe 'fizzbuzz' do
   it 'returns "fizz" when passed 3' do
     expect(fizzbuzz(3)).to eq 'fizz'
+  end
+end
+
+describe 'fizzbuzz' do
+  it 'returns "fizz" for the number 3' do
+    expect(3.fizzbuzz).to eq 'fizz'
   end
 end
 
